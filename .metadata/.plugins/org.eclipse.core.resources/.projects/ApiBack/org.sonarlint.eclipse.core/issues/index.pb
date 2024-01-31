@@ -11,3 +11,5 @@ q
 Asrc/main/java/com/example/ApiBack/service/NoticiasServiceImp.java,c\2\c2bcc6ca46804fbf1c1f5ad744d738a16a0ad23f
 t
 Dsrc/main/java/com/example/ApiBack/controller/NoticiasController.java,7\8\78fd06c12490b17ef4032a3d2d099833a21ed725
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
