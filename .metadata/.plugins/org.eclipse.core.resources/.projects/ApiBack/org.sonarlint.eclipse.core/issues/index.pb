@@ -13,3 +13,5 @@ t
 Dsrc/main/java/com/example/ApiBack/controller/NoticiasController.java,7\8\78fd06c12490b17ef4032a3d2d099833a21ed725
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+i
+9src/main/java/com/example/ApiBack/ApiBackApplication.java,5\4\542080566a574ac15c2bbfa281b36a1992ed2faa
