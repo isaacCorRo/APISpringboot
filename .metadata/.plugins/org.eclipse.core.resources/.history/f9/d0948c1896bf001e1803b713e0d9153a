@@ -1,0 +1,117 @@
+package com.example.ApiBack.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+
+import com.example.ApiBack.dao.INoticiasDao;
+import com.example.ApiBack.response.NoticiasResponseRest;
+
+import jakarta.transaction.TransactionScoped;
+import jakarta.transaction.Transactional;
+
+public class NoticiasServiceImp implements INoticiasService {
+	
+	@Autowired
+	private INoticiasDao notdao;
+	
+	@Override
+	@Transactional
+	public ResponseEntity<NoticiasResponseRest> guardarFavorito(Noticias noticias) {
+		log.info("Inicio método guardarNoticia");
+		NoticiasResponseRest response = new NoticiasResponseRest();
+		int validacion = validarDatosNulos(noticias);	
+		if (validacion == 0) {
+			try {
+				notdao.save(noticias);
+				response.setMetadata("200", "OK");
+				return new ResponseEntity<NoticiasResponseRest>(response, HttpStatus.OK);
+				
+			}catch(Exception e){
+				response.setMetadata("500", "Error al guardar favorito: "+ e.getMessage());
+				log.error("Error al guardar favorito: "+e.getMessage());
+				e.printStackTrace();
+				return new ResponseEntity<NoticiasResponseRest>(response, HttpStatus.INTERNAL_SERVER_ERROR);
+			}
+		}else {
+			switch (validacion) {
+	        case 1:
+	        	log.info("No esta enviando el objeto");
+				response.setMetadata("500", "Request sin data");
+				return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);
+	        case 2:
+	        	log.info("Id es NULL");
+				response.setMetadata("500", "Id no puede ser NULL");
+				return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);
+	        case 3:
+	        	log.info("title es NULL");
+				response.setMetadata("500", "title no puede ser NULL");
+				return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);
+	        case 4:
+	        	log.info("url es NULL");
+				response.setMetadata("500", "url no puede ser NULL");
+				return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);
+	        case 5:
+	        	log.info("image_url es NULL");
+				response.setMetadata("500", "image_url no puede ser NULL");
+				return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);
+	        case 6:
+	        	log.info("news_site es NULL");
+				response.setMetadata("500", "news_site no puede ser NULL");
+				return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);
+	        case 7:
+	        	log.info("summary es NULL");
+				response.setMetadata("500", "summary no puede ser NULL");
+				return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);
+	        case 8:
+	        	log.info("published_at es NULL");
+				response.setMetadata("500", "summary no puede ser NULL");
+				return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);
+	        case 9:
+	        	log.info("updated_at es NULL");
+				response.setMetadata("500", "summary no puede ser NULL");
+				return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);
+	        default:
+	        	log.info("Error en switch guardarFavoritos");
+				response.setMetadata("500", "Error al guardar");
+				return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);
+			}
+		}
+	}
+	
+	public int validarDatosNulos(Noticias noticias) {
+		int Error;		
+	    
+		if (noticias == null) {
+	        return Error = 1;
+	    }	    
+	    if (noticias.getId() == null) {
+	        return Error = 2;
+	    }
+	    if (noticias.getTitle() == null) {
+	        return Error = 3;
+	    }	    
+	    if (noticias.getUrl() == null) {
+	        return Error = 4;
+	    }
+	    if (noticias.getImageUrl() == null) {
+	        return Error = 5;
+	    }
+	    if (noticias.getNewsSite() == null) {
+	        return Error = 6;
+	    }
+	    if (noticias.getSummary() == null) {
+	        return Error = 7;
+	    }
+	    if (noticias.getPublishedAt() == null) {
+	        return Error = 8;
+	    }
+	    if (noticias.getUptatedAt() == null) {
+	        return Error = 9;
+	    }
+	    return Error =0;
+	}
+
+		
+		
+}

@@ -1,0 +1,45 @@
+
+c
+java:S2589m"8Remove this expression which always evaluates to "false"(¹ÚÛ.HÅRMAJORZ
+CODE_SMELL
+]
+java:S1135{"2Complete the task associated to this TODO comment.(ËòÜ°HÊRINFOZ
+CODE_SMELL
+Š
+java:S2293o"YReplace the type specification in this constructor call with the diamond operator ("<>").(£Çñ‘ùÿÿÿÿH®RMINORZ
+CODE_SMELL
+Š
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(«ì˜îûÿÿÿÿHÀRMINORZ
+CODE_SMELL
+Š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ö´İşùÿÿÿÿHÄRMINORZ
+CODE_SMELL
+‹
+java:S2293ˆ"YReplace the type specification in this constructor call with the diamond operator ("<>").(£Çñ‘ùÿÿÿÿH¾RMINORZ
+CODE_SMELL
+‹
+java:S2293˜"YReplace the type specification in this constructor call with the diamond operator ("<>").(£Çñ‘ùÿÿÿÿH°RMINORZ
+CODE_SMELL
+]
+java:S1135G"2Complete the task associated to this TODO comment.(Ö‘­ÉHÉRINFOZ
+CODE_SMELL
+…
+java:S2293¡"YReplace the type specification in this constructor call with the diamond operator ("<>").(“ôø=HºRMINORZ
+CODE_SMELL
+‹
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(«ì˜îûÿÿÿÿH´RMINORZ
+CODE_SMELL
+Š
+java:S2293t"YReplace the type specification in this constructor call with the diamond operator ("<>").(«ì˜îûÿÿÿÿH¶RMINORZ
+CODE_SMELL
+…
+java:S2293Œ"YReplace the type specification in this constructor call with the diamond operator ("<>").(“ôø=H¼RMINORZ
+CODE_SMELL
+‹
+java:S2293…"YReplace the type specification in this constructor call with the diamond operator ("<>").(«ì˜îûÿÿÿÿHÂRMINORZ
+CODE_SMELL
+„
+java:S2293""YReplace the type specification in this constructor call with the diamond operator ("<>").(“ôø=H²RMINORZ
+CODE_SMELL
+„
+java:S2293x"YReplace the type specification in this constructor call with the diamond operator ("<>").(“ôø=H¸RMINORZ
+CODE_SMELL

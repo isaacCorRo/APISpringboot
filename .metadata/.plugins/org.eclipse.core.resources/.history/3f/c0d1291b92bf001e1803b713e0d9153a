@@ -1,0 +1,11 @@
+package com.example.ApiBack.service;
+
+import org.springframework.http.ResponseEntity;
+
+import com.example.ApiBack.models.Noticas;
+
+public interface INoticiasService {
+	
+	public ResponseEntity<NoticiasResponseRest>savefav(Noticas noticia);
+
+}

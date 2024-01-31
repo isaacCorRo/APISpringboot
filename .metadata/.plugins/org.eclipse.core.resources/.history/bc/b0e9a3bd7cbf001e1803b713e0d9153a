@@ -1,0 +1,9 @@
+package com.example.ApiBack.service;
+
+import com.example.ApiBack.models.Noticas;
+
+public interface INoticiasService {
+	
+	public ReponseEntity<NoticiasResponseRest>savefav(Noticas noticia);
+
+}

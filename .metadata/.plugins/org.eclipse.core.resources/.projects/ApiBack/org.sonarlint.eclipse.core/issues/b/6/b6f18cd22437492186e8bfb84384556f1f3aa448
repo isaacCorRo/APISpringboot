@@ -1,0 +1,6 @@
+
+Š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ö´ÝþùÿÿÿÿH“	RMINORZ
+CODE_SMELL
+o
+java:S1128"CRemove this unused import 'org.springframework.stereotype.Service'.(¼º¡ÚH”	RMINORZ
+CODE_SMELL

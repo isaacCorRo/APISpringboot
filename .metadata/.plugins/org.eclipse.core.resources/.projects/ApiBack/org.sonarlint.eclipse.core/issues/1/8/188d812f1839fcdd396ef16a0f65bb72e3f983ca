@@ -1,0 +1,10 @@
+
+	java:S117]"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(º¥ úûÿÿÿÿH«RMINORZ
+CODE_SMELL
+ˆ	java:S117U"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬ä ²ùÿÿÿÿ8™‘äÕ1HõRMINORZ
+CODE_SMELL
+€
+java:S1128"HRemove this unused import 'com.fasterxml.jackson.annotation.JsonFormat'.(ıÙè‹øÿÿÿÿ8øàíäÕ1HŸRMINORZ
+CODE_SMELL
+…	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ñÉşH¬RMINORZ
+CODE_SMELL

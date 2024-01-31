@@ -1,0 +1,5 @@
+package com.example.ApiBack.response;
+
+public class NoticiasResponseRest {
+
+}

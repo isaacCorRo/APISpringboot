@@ -1,0 +1,9 @@
+package com.example.ApiBack.dao;
+
+import org.springframework.data.repository.CrudRepository;
+
+import models.Noticas;
+
+public interface INoticiasDao extends CrudRepository<Noticas, Long>{
+
+}

@@ -1,0 +1,21 @@
+1706624265661	Delete element
+1706624276359	Copy packages
+1706624314679	Delete element
+1706624317900	Delete element
+1706624320083	Delete element
+1706624322342	Delete element
+1706624330646	Rename package 'models.copy'
+1706624333981	Rename package 'interfaces.copy'
+1706624338885	Rename package 'dao.copy'
+1706624343015	Rename package 'controller.copy'
+1706624377590	Delete element
+1706624671777	Move compilation unit
+1706624677899	Delete element
+1706624689541	Move compilation unit
+1706624693332	Delete element
+1706624710460	Move compilation unit
+1706624713330	Delete element
+1706624725692	Move compilation unit
+1706624728691	Delete element
+1706625384214	Encapsulate field 'noticiasresponse'
+1706625470850	Encapsulate field 'metadata'

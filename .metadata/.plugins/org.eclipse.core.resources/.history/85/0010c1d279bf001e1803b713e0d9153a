@@ -1,0 +1,7 @@
+package interfaces;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface NoticiasInterface extends JpaRepository<Noticas, Long> {
+
+}
