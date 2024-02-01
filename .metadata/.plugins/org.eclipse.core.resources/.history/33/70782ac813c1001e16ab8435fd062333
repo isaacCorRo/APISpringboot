@@ -1,0 +1,43 @@
+package com.example.ApiBack;
+import com.example.ApiBack.models.Noticas;
+
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class ApiBackApplicationTests {
+
+	@Test
+    public void testSavefav() {
+        // Configuración de datos de prueba para la noticia
+        Noticas noticias = new Noticas();
+        noticias.setId("22427");
+        noticias.setTitle("New Glenn hardware assembling at Launch Complex 36");
+        noticias.setUrl("https://www.nasaspaceflight.com/2024/01/new-glenn-hardware/");
+        noticias.setImageurl("https://www.nasaspaceflight.com/wp-content/uploads/2024/01/new-glenn-integration-1170x843.jpeg");
+        noticias.setNews_site("NASASpaceflight");
+        noticias.setSummary("As the first month of 2024 closes, Blue Origin is well into production with its orbital rocket, New Glenn. The company continues to check off major milestones as high-fidelity hardware arrives at Launch Complex 36 (LC-36) ahead of a testing campaign and a NASA mission scheduled for late 2024.");
+        String try1 = "2024-01-30T21:33:59Z";
+        LocalDateTime published = LocalDateTime.parse(try1, DateTimeFormatter.ISO_DATE_TIME);
+        noticias.setPublishedat(published);
+        String update = "2024-01-30T21:36:56.115000Z";
+        LocalDateTime fechaPublicacion = LocalDateTime.parse(fechaPublicacionStr, DateTimeFormatter.ISO_DATE_TIME);
+        noticias.setPublishedat(fechaPublicacion);
+        noticias.setUpdatedat("2024-01-30T21:36:56.115000Z");
+
+        // Crea una instancia de la clase que contiene el método a probar
+        TuClaseDePrueba tuClaseDePrueba = new TuClaseDePrueba();
+
+        // Llama al método que deseas probar
+        ResponseEntity<NoticiasResponseRest> result = tuClaseDePrueba.savefav(noticias);
+
+        // Realiza aserciones sobre el resultado
+        assertEquals(HttpStatus.OK, result.getStatusCode());
+        assertEquals("OK", result.getBody().getMetadata().getStatus());
+        // Puedes hacer más aserciones según tus necesidades
+    }
+
+}
